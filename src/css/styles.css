@@ -1,0 +1,135 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px #00000023;
+    padding: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a#forget{
+    text-align: right;
+
+}
+
+
+form.phoneMe, form.loginMe{
+    background: #351c91cb;
+    color: white;
+}
+
+form.phoneMe input,form.loginMe input{
+    background: transparent;
+    color: white;
+    border-radius: 100px;
+}
+
+form.loginMe input::placeholder{
+    color:rgb(185, 184, 184)
+}
+
+a:hover{
+    color: red;
+    transition: color ease-in-out 300ms;
+}
+
+
+@property --anima {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 10deg;
+}
+
+button{
+    --anima:90deg;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+    color: white!important;
+    transition: --anima ease 800ms;
+    border: 0;
+    background:linear-gradient(var(--anima),rgb(17, 169, 196),rgb(226, 8, 190));
+    outline: 0;
+}
+
+button[disabled]{
+    background:linear-gradient(90deg,#aaa,#aaa);
+}
+
+button:hover{
+    --anima:227deg;            
+}
+
+a{
+    margin: 1rem;
+    color: white;
+}
+
+body{
+    padding: 10rem;
+    max-width: 100%;
+    --grayish: rgb(158, 156, 156);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #000;
+    border-bottom: 2px solid var(--grayish)
+}
+
+input#profilepic{
+    display: none;
+}
+
+img#previewImage{
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+    margin: 1rem auto;
+}
+
+label#replacerFile{
+padding: 1rem ;
+border: 2px solid #000;
+text-align: center;
+margin: 1rem auto;
+
+overflow: hidden;
+border-radius: 20px;
+max-width: 50%;
+
+}
+
+input:hover{
+    border-bottom-color: var(--grayish);
+}
+
+label#replacerFile:hover{
+    border-color:  var(--grayish);
+}
+
+input::placeholder{
+    color: var(--grayish);
+}
+
+form div.error h1{
+    color: red;
+    font-size: small;
+}

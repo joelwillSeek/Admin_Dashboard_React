@@ -1,0 +1,35 @@
+button.deleteUser{
+    background:transparent;
+    border:2px solid red;
+    margin: auto;
+    border-radius: 20px;
+    color: #000;
+    transition: background ease 300ms,color ease 300ms;
+}
+
+button.deleteUser:hover{
+    background-color: red;
+    color: white;
+}
+
+button.UpdateUser{
+    background: transparent;
+    border: 2px solid rgb(2, 168, 2);
+    transition: background-color ease;
+    
+}
+
+button.UpdateUser:hover{
+    background-color: rgb(2, 168, 2);
+}
+
+div.card div.chooseWhatToDO{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+div.card div.chooseWhatToDO button{
+    margin: 0 1rem;
+}
